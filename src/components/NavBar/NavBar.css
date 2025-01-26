@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    padding: 20px;
+}
+
+.header .left-logo img {
+    height: 45px;
+}
+.header .right-logo img {
+    height: 45px;
+}

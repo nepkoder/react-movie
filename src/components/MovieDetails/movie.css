@@ -1,0 +1,164 @@
+.rmdb-navigation {
+    width: 100%;
+    height: 50px;
+    background: #353535;
+    color: #fff;
+    position: relative;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.rmdb-navigation-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.rmdb-navigation-content p {
+    font-family: Abel, sans-serif;
+    font-size: 22px;
+    float: left;
+    color: #fff;
+    padding-right: 10px;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* movie details */
+.rmdb-movieinfo {
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100%;
+    height: 600px;
+    padding: 40px 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-animation: animateMovieinfo 1s;
+            animation: animateMovieinfo 1s;
+  }
+  
+  @-webkit-keyframes animateMovieinfo {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  
+  @keyframes animateMovieinfo {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  
+  .rmdb-movieinfo-content {
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: rgb(0, 0, 0, 0.7);
+    position: relative;
+  }
+  
+  .rmdb-movieinfo-thumb {
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+  }
+  
+  .rmdb-movieinfo-text {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: auto;
+    padding: 40px;
+    color: #fff;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    left: 360px;
+  }
+  
+  .rmdb-movieinfo-text h1 {
+    font-family: 'Abel', sans-serif;
+    font-size:48px;
+    margin: 0;
+  }
+  
+  .rmdb-movieinfo-text h3 {
+    font-size: 16px;
+    line-height: 0;
+    margin-top: 30px;
+  }
+  
+  .rmdb-movieinfo-text p {
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  
+  .rmdb-rating {
+    width: 250px;
+    height: 20px;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .rmdb-score {
+    position: absolute;
+    margin: 0;
+    right: 0px;
+    top: -3px;
+  }
+  
+  .rmdb-director {
+    margin: 0;
+  }
+  
+  .fa-film {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    color: #fff;
+  }
+  
+  meter::-webkit-meter-bar {
+    background: #FFF;
+    width:200px;
+  }
+  meter::-webkit-meter-optimum-value {
+    background: -webkit-gradient(linear, left top, left bottom, from(#16d47b));
+    background: -webkit-linear-gradient(top, #16d47b);
+    background: linear-gradient(to bottom, #16d47b);
+  }
+  meter::-webkit-meter-suboptimum-value {
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbb450));
+    background: -webkit-linear-gradient(top, #fbb450);
+    background: linear-gradient(to bottom, #fbb450);
+  }
+  meter::-webkit-meter-even-less-good-value {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ee5f5b));
+    background: -webkit-linear-gradient(top, #ee5f5b);
+    background: linear-gradient(to bottom, #ee5f5b);
+  }
+
+  .rmdb-moviethumb img {
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }

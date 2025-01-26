@@ -1,0 +1,20 @@
+.load-more {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.load-more button {
+    border: none;
+    color: white;
+    background-color: teal;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.load-more button:hover {
+    background-color: red;
+} 
