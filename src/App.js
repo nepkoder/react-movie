@@ -10,20 +10,34 @@ import MovieDetails from './components/MovieDetails/MovieDetails';
 import NotFound from './components/NotFound/NotFound';
 import {ThemeProvider} from './provider/ThemeProvider';
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/movie-details/:id",
+    element: <MovieDetails />,
+  },
+  {
+    path: "*",
+    element: <NotFound />, // Catch-all for unmatched routes
+  }
+]);
+
 function App() {
   return (
     <ThemeProvider>
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/movie-details/:id" element={<MovieDetails />} />
-        <Route path="*" element={<NotFound />} /> {/* Catch-all for unmatched routes */}
-      </Routes>
-    </HashRouter>
+      <RouterProvider router={router} />
     </ThemeProvider>
-
   );
 }
 
