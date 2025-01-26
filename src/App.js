@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 
-import { createBrowserRouter, RouterProvider,BrowserRouter, Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider,HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
@@ -13,7 +13,7 @@ import {ThemeProvider} from './provider/ThemeProvider';
 function App() {
   return (
     <ThemeProvider>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/movie-details/:id" element={<MovieDetails />} />
         <Route path="*" element={<NotFound />} /> {/* Catch-all for unmatched routes */}
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </ThemeProvider>
 
   );
